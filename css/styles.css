@@ -8,6 +8,10 @@ a {
     color: inherit !important;
 }
 
+.container > .row {
+    margin-bottom: 3rem !important;
+}
+
 /*------ SECTIONS ------*/
 
 /*--Navbar*/
@@ -36,4 +40,20 @@ a {
 /*--Header*/
 .header-main {
     min-height: 100vh;
+}
+
+/*--Knowleadge*/
+.icon-mongo {
+    --box-size: 70px;
+    width: var(--box-size);
+    height: var(--box-size);
+    padding: 10px;
+}
+
+/*---Portfolio*/
+.portfolio-item > img {
+    transition: 0.4s transform;
+}
+.portfolio-item:hover > img {
+    transform: scale(0.96);
 }

@@ -29,7 +29,10 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#projects">Home</a>
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#knowleadge">Knowleadge</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
@@ -45,7 +48,7 @@
     <main>
       <div class="container">
         <!--Header-->
-        <header class="row align-items-center header-main">
+        <header class="row align-items-center header-main" id="home">
           <div class="col-md-7">
             <!--Greeting-->
             <h1 class="display-2">
@@ -78,9 +81,137 @@
             </div>
           </div>
         </header>
-
+        <hr>
         <!--Servicios-->
-        <section class="row justify-content-around text-center" id="projects"></section>
+        <section class="row justify-content-between text-center" id="knowleadge">
+          <!--Title-->
+          <h2 class="col-12 display-4 text-capitalize mb-3">
+            My Knowleadge
+          </h2>
+          <!--Cards-->
+
+          <!--Card 1-->
+          <article class="col-10 col-md-10 col-lg-3 bg-dark rounded shadow p-3 fw-light">
+            <!--Icon-->
+            <img src="/assets/node-js.png" alt="node"
+              class="bg-dark bg-gradient d-inline-block rounded-circle mb-3 icon-mongo">
+            <!--Title-->
+            <h3 class="text-capitalize">
+              Node.js
+            </h3>
+            <!--description-->
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga similique dolore aliquam earum rerum cum.
+            </p>
+            <!--btn-->
+            <a href="#" class="btn btn-outline-info">Go</a>
+          </article>
+
+          <!--Card 2-->
+          <article class="col-10 col-md-10 col-lg-3 bg-dark rounded shadow p-3 fw-light">
+            <!--Icon-->
+            <img src="/assets/express.png" alt="mongo"
+              class="bg-dark bg-gradient d-inline-block rounded-circle mb-3 icon-mongo">
+            <!--Title-->
+            <h3 class="text-capitalize">
+              Express
+            </h3>
+            <!--description-->
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga similique dolore aliquam earum rerum cum.
+            </p>
+            <!--btn-->
+            <a href="#" class="btn btn-outline-info">Go</a>
+          </article>
+
+          <!--Card 3-->
+          <article class="col-10 col-md-10 col-lg-3 bg-dark rounded shadow p-3 fw-light">
+            <!--Icon-->
+            <img src="/assets/angular.svg" alt="mongo"
+              class="bg-dark bg-gradient d-inline-block rounded-circle mb-3 icon-mongo">
+            <!--Title-->
+            <h3 class="text-capitalize">
+              Angular
+            </h3>
+            <!--description-->
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga similique dolore aliquam earum rerum cum.
+            </p>
+            <!--btn-->
+            <a href="#" class="btn btn-outline-info">Go</a>
+          </article>
+        </section>
+        <section class="row justify-content-center text-center text-md-start">
+          <!--Title-->
+          <h1 class="col-md-4 text-center text-md-start display-4 text-capitalize">
+            Who I'm
+          </h1>
+          <!--info-->
+          <div class="col-10 col-md-8">
+            <p class="text-muted fw-light">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium exercitationem dolorem dolore
+              voluptatibus numquam expedita!
+            </p>
+            <a href="" download="CV-Kelvin-Guerrero" class="btn btn-danger rounded-pill px-4">Download CV</a>
+          </div>
+        </section>
+        <hr>
+
+        <!--Portfolio-->
+        <main class="row justify-content-center pt-5 sec-portfolio-js" id="projects">
+          <!-- column 1 -->
+          <div class="col-10 col-md-4">
+            <div class="row">
+              <!--image 1-->
+              <a href="" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+                <img src="/assets/project-1.png" alt="aDogme-app" class="w-100 img-btn-modal-js">
+              </a>
+
+              <!--image 2-->
+              <a href="" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+                <img src="/assets/project-2.png" alt="Javascript App" class="w-100 img-btn-modal-js">
+              </a>
+
+              <!--image 3-->
+              <a href="" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+                <img src="/assets/project-3.png" alt="Javascript App" class="w-100 img-btn-modal-js">
+              </a>
+
+            </div>
+          </div>
+          <!-- column 2 -->
+          <div class="col-10 col-md-8">
+            <div class="row">
+              <h2 class="col-12 py-3 text-end display-4">
+                Portfolio
+              </h2>
+              <!-- image 1 -->
+              <a href="" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+                <img src="/assets/project-4.png" alt="Angular App" class="w-100 img-btn-modal-js">
+              </a>
+
+              <!-- image 2 -->
+              <a href="" class="col-12 col-md-6 mb-3 portfolio-item" data-bs-toggle="modal"
+                data-bs-target="#modal-portfolio">
+                <img src="/assets/project-coming.png" alt="Angular App" class="w-100 img-btn-modal-js">
+              </a>
+
+              <!-- image 3 -->
+              <a href="" class="col-12 col-md-6 mb-3 portfolio-item" data-bs-toggle="modal"
+                data-bs-target="#modal-portfolio">
+                <img src="/assets/project-coming.png" alt="Angular App" class="w-100 img-btn-modal-js">
+              </a>
+
+            </div>
+          </div>
+          <!-- General modal -->
+          <div class="col-9 modal fade" id="modal-portfolio">
+            <div class="modal-dialog position-relative modal-dialog-centered">
+              <img src="" alt="" class="w-100 img-modal-js">
+            </div>
+          </div>
+        </main>
+
       </div>
     </main>
 
@@ -99,6 +230,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
