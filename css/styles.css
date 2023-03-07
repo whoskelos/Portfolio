@@ -1,11 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-*, body{
+body {
     font-family: 'Montserrat', sans-serif !important;
 }
 
-.container-fluid {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+a {
+    color: inherit !important;
+}
+
+/*------ SECTIONS ------*/
+
+/*--Navbar*/
+.navbar-main .active {
+    text-decoration: underline wavy #fbf9fa;
+    text-underline-offset: 7px;
+}
+
+.icons-rrss a img {
+    --size: 40px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+}
+.icons-rrss a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s filter;
+}
+
+.icons-rrss a:hover {
+    filter: opacity(0.5);
+}
+
+/*--Header*/
+.header-main {
+    min-height: 100vh;
 }

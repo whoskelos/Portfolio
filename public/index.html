@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Kelvin Guerrero</title>
+  <title>Portfolio - Kelvin Guerrero</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,76 +14,91 @@
 </head>
 
 <body>
-    <div class="container-fluid d-flex flex-column justify-content-between vh-100">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarColor02">
-                <ul class="navbar-nav me-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Home
-                      <span class="visually-hidden">(current)</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-sm-2" type="search" placeholder="Search">
-                  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
+  <div class="container-fluid">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-main">
+      <div class="container">
+        <!--Branding-->
+        <a class="navbar-brand" href="#">KG</a>
+        <!--Button-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+          aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Items-->
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#projects">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-        <main>
-            <div class="container d-flex flex-column">
-                <div class="foto">
-                    <img src="/assets/kelvin.jpg" alt="Kelvin Guerrero" class="img-fluid rounded-circle">
-                </div>
-                <div class="info d-flex flex-column align-items-center py-3">
-                    <div class="text-center">Estudiante de Desarrollo de Aplicaciones Web</div>
-                    <div class="text-center">Apasionado de la informatica, y loco por Javascript</div>
-                    <div class="text-center">Tengo conocimientos en Javascript,Angular,Node.js,PHP,Symfony</div>
-                </div>
+    <main>
+      <div class="container">
+        <!--Header-->
+        <header class="row align-items-center header-main">
+          <div class="col-md-7">
+            <!--Greeting-->
+            <h1 class="display-2">
+              <span class="dblock">Hello,</span>
+              I'm Kelvin Guerrero
+            </h1>
+            <!--About me-->
+            <p class="text-muted fw-light text-capitalize">
+              Desarrollador Web Freenlance - MongoDB - Express - Angular - Node
+            </p>
+            <!--RRSS-->
+            <div class="d-none d-md-block icons-rrss">
+              <!--Linkedin-->
+              <a href="#" target="_blank">
+                <img src="/assets/linkedin.png" alt="Linkedin">
+              </a>
+              <!--Twitter-->
+              <a href="#" target="_blank" class="mx-3">
+                <img src="/assets/twitter.png" alt="Twitter">
+              </a>
+              <!--Github-->
+              <a href="#" target="_blank">
+                <img src="/assets/github.png" alt="Github">
+              </a>
             </div>
-        </main>
-
-        <footer>
-          <!-- place footer here -->
-          <div class="container d-flex justify-content-center p-3">
-            Kelvin Guerrero
           </div>
-        </footer>
-    </div>
+          <div class="col-8 col-md-4">
+            <div class="photo-frame position-relative shadow">
+              <img src="/assets/kelvin.jpg" alt="Kelvin Guerrero" class="w-100">
+            </div>
+          </div>
+        </header>
+
+        <!--Servicios-->
+        <section class="row justify-content-around text-center" id="projects"></section>
+      </div>
+    </main>
+
+    <footer>
+      <!-- place footer here -->
+      <div class="container d-flex justify-content-center p-3">
+        Kelvin Guerrero
+      </div>
+    </footer>
+  </div>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+    </script>
 </body>
 
 </html>
