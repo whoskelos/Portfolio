@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 body {
     font-family: 'Montserrat', sans-serif !important;
 }
@@ -38,9 +42,9 @@ a {
 }
 
 /*--Header*/
-.header-main {
+/* .header-main {
     min-height: 100vh;
-}
+} */
 
 /*--Knowleadge*/
 .icon-mongo {
@@ -56,4 +60,19 @@ a {
 }
 .portfolio-item:hover > img {
     transform: scale(0.96);
+}
+
+@media (max-width: 425px) {
+    body {
+        margin-top: 5rem !important;
+    }
+    .header-main {
+        height: initial !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-main {
+        min-height: 100vh !important;
+    }
 }
