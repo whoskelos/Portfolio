@@ -12,6 +12,10 @@ a {
     color: inherit !important;
 }
 
+.navbar-brand > img {
+    width: 35px;
+}
+
 .container > .row {
     margin-bottom: 3rem !important;
 }
@@ -20,7 +24,7 @@ a {
 
 /*--Navbar*/
 .navbar-main .active {
-    text-decoration: underline wavy #fbf9fa;
+    text-decoration: underline #fbf9fa;
     text-underline-offset: 7px;
 }
 
