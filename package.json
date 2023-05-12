@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/whoskelos/Portfolio#readme",
   "dependencies": {
-    "firebase": "^9.6.11"
+    "firebase": "^9.21.0"
   }
 }

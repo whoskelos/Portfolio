@@ -1,4 +1,7 @@
 # Portfolio 🧑‍💻
+First version of my Portfolio using HTML5,CSS3
+By: Kelvin Miguel Guerrero Mite - WEB Developer
+
 ## Link
 Visit here 👉🏻 [Portfolio](https://portfolio.whoskelos.es "My personal website")
 
