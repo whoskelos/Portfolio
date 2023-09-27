@@ -11,6 +11,7 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link rel="stylesheet" href="./assets/css/styles.css">
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <script src="./assets/js/elevator.js"></script>
 
 </head>
 
@@ -32,16 +33,16 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#home">Home</a>
+              <a class="nav-link active" href="#home">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#knowleadge">Knowleadge</a>
+              <a class="nav-link" href="#knowleadge">Conocimientos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#projects">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
@@ -55,8 +56,8 @@
           <div class="col-md-7 text-center text-md-start">
             <!--Greeting-->
             <h1 class="display-2">
-              <span class="dblock">Hello,</span>
-              I'm Kelvin Guerrero
+              <span class="dblock">Hola,</span>
+              soy Kelvin Guerrero
             </h1>
             <!--About me-->
             <p class="text-muted fw-light text-capitalize">
@@ -84,12 +85,12 @@
             </div>
           </div>
         </header>
-        <hr>
+        <hr id="knowleadge">
         <!--Servicios-->
-        <section class="row justify-content-around text-center" id="knowleadge">
+        <section class="row justify-content-around text-center">
           <!--Title-->
           <h2 class="col-12 display-4 text-capitalize mb-3">
-            My Knowleadge
+            Conocimientos
           </h2>
           <!--Cards-->
 
@@ -151,22 +152,21 @@
         <section class="row justify-content-center text-center text-md-start">
           <!--Title-->
           <h1 class="col-md-4 text-center text-md-start display-4 text-capitalize">
-            Who I'm
+            Sobre mi
           </h1>
           <!--info-->
           <div class="col-10 col-md-8">
             <p class="text-muted fw-light">
-              I really enjoy developing apps and learning new things everyday, I'm open to work, feel free about read my
-              CV!
+              Disfruto mucho desarrollando, y me encanta aprender cosas nuevas, no dudes en contactarme.
             </p>
             <a href="./assets/files/kelvin_guerrero.pdf" download="CV-Kelvin-Guerrero"
-              class="btn btn-danger rounded-pill px-4">Download CV</a>
+              class="btn btn-danger rounded-pill px-4">Descargar CV</a>
           </div>
         </section>
-        <hr>
+        <hr id="projects">
 
         <!--Portfolio-->
-        <main class="row justify-content-center pt-5 sec-portfolio-js" id="projects">
+        <main class="row justify-content-center pt-5 sec-portfolio-js">
           <!-- column 1 -->
           <div class="col-10 col-md-4 order-2 order-md-1">
             <div class="row">
@@ -191,7 +191,7 @@
           <div class="col-10 col-md-8 order-1 order-md-2">
             <div class="row">
               <h2 class="col-12 py-3 text-center text-md-end display-4">
-                Portfolio
+                Proyectos
               </h2>
               <!-- image 1 -->
               <a href="https://ddreams.whoskelos.es" class="col-12 mb-3 portfolio-item" target="_blank">
@@ -213,7 +213,7 @@
         <section class="row justify-content-center" id="contact">
           <div class="col-9 col-lg-7 bg-dark text-center py-4 px-3 shadow position-relative">
             <p class="h6 text-muted fw-light">
-              Contact
+              Contacto
             </p>
             <a href="mailto:kelvinguerrero2199@gmail.com"
               class="h4 text-decoration-none text-break">kelvinguerrero2199@gmail.com</a>
@@ -223,10 +223,10 @@
         <div class="row justify-content-center text-center">
           <!--Items-->
           <nav class="nav col-11 justify-content-center mb-4">
-            <a class="nav-link active" href="#home">Home</a>
-            <a class="nav-link" href="#knowleadge">Knowleadge</a>
-            <a class="nav-link" href="#projects">Projects</a>
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link active" href="#home">Inicio</a>
+            <a class="nav-link" href="#knowleadge">Conocimientos</a>
+            <a class="nav-link" href="#projects">Proyectos</a>
+            <a class="nav-link" href="#contact">Contacto</a>
           </nav>
           <!--rrss-->
           <div class="icons-rrss">
@@ -252,7 +252,7 @@
   <footer>
     <!-- place footer here -->
     <div class="bg-dark d-flex justify-content-center p-3">
-      Kelvin Guerrero 2023. All rights reserved
+      Kelvin Guerrero 2023. All rights reserved ®️
     </div>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
@@ -263,8 +263,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
-  <script src="./assets/js/elevator.js"></script>
   <script src="./assets/js/app.js"></script>
+  <script>
+    // Simple elevator usage.
+    var elementButton = document.querySelector('.elevator-button');
+    var elevator = new Elevator({
+      element: elementButton,
+      mainAudio: './elevator.mp3', // Music from http://www.bensound.com/
+      endAudio: './ding.mp3',
+    });
+  </script>
 </body>
 
 </html>

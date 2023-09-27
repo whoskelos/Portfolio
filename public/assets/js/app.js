@@ -1,12 +1,3 @@
-window.onload = function () {
-    var elevator = new Elevator({
-        element: document.querySelector(".elevator-button"),
-        mainAudio: "/public/assets/files/start.mp3",
-        endAudio: "/public/assets/files/end.mp3",
-        duration: 4000,
-    });
-};
-
 // Función para verificar la posición de desplazamiento y mostrar/ocultar el botón
 function checkScrollPosition() {
     const scrollButton = document.getElementById("scrollButton");
