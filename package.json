@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/whoskelos/Portfolio#readme",
   "dependencies": {
+    "elevator.js": "^1.0.1",
     "firebase": "^9.21.0"
   }
 }
